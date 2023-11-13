@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="menu-bar">
+            <div class="app-icon">
+                <img src="./img/app-logo.svg" style="width: 35px;" alt="">
+            </div>
+            <div class="mail">
+                <img src="./img/mail.png" alt="">
+            </div>
+            <div class="conversation-logo">
+                <img src="./img/chat.png" alt="">
+            </div>
+            <div class="notifications">
+                <img src="./img/alert.png" alt="">
+            </div>
+            <div class="clear-chat">
+                <img src="./img/bin.png" alt="">
+            </div>
+            <div class="profile">
+                <img src="./img/user.png" alt="">
+            </div>
+        </div>
+        <div class="user-chat">
+            <div class="app-actions">
+                <h3>Chat</h3>
+                <input placeholder="Search">
+                <a href="">+</a>
+            </div>
+            <div class="chat-list">
+                <span>PINNED</span>
+                <div class="pinned">
+                    <div class="conversation selected-conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-2.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Ariya Goulding</div>
+                            <div class="last-message">Have a good day, Roman!</div>
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-3.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Omari Norris</div>
+                            <div class="last-message">Hi, good to hear from you...</div>
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-1.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Sherri Matthews</div>
+                            <div class="last-message">Wow, that looks amazing.</div>
+                        </div>
+                    </div>
+                </div>
+                <span>ALL</span>
+                <div class="all-remaining">
+                    <div class="conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-6.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Sherri Matthews</div>
+                            <div class="last-message">Wow, that looks amazing.</div>
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-4.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Marcus King</div>
+                            <div class="last-message">I'm ready to buy this thing, but...</div>
+                        </div>
+                    </div>
+                    <div class="conversation last-conversation">
+                        <div class="user-img">
+                            <img src="./img/avatar-5.webp" alt="">
+                        </div>
+                        <div class="user-info">
+                            <div class="username">Chloe Hayes</div>
+                            <div class="last-message">Hi! My order arrived yest</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-section">
+            <div class="user">
+                <div class="user-details">
+                    <div class="user-img">
+                        <img src="./img/avatar-2.webp" alt="">
+                    </div>
+                    <div class="user-info">
+                        <div class="username">Ariya Goulding</div>
+                        <div class="user-meta">Online</div>
+                    </div>
+                </div>
+                <div class="conversation-related">
+                    <div class="conversation-buttons">
+                        <button id="profile-bttn">Profile</button>
+                        <button id="call-bttn">Call</button>
+                    </div>
+                    <div class="conversation-actions">
+                        <img src="./img/search.png" alt="" id="search-button">
+                        <img src="./img/more.png" alt="" id="settings-button">
+                    </div>
+                </div>
+            </div>
+            <div class="view-chat">
+                <div class="message-area">
+                    <div class="date">10 June, 2022</div>
+                    <div class="my_message">
+                        <div class="my-text">Okay, it's almost ready</div>
+                        <div class="status">
+                            <div class="time">5:12 PM</div>
+                            <img src="./img/seen.png" alt="">
+                        </div>
+                    </div>
+                    <div class="others-message-container">
+                        <img src="./img/avatar-2.webp" alt="">
+                        <div class="others-message">
+                            <div class="other-text">How about these pictures?</div>
+                            <div class="status">
+                                <div class="time">5:12 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_message">
+                        <div class="my-text">Looks cool, can you find more options?</div>
+                        <div class="status">
+                            <div class="time">5:12 PM</div>
+                            <img src="./img/seen.png" alt="">
+                        </div>
+                    </div>
+                    <div class="others-message-container">
+                        <img src="./img/avatar-2.webp" alt="">
+                        <div class="others-message">
+                            <div class="other-text">Sure, but I'm busy right now.</div>
+                            <div class="status">
+                                <div class="time">5:13 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <div class="chatting-tools">
+                    <img src="./img/paper-clip.png" alt="">
+                    <input id="user-input" type="text" placeholder="Write messages...">
+                    <img src="./img/smile.png" alt="">
+                </div>
+                <div class="button-container">
+                    <img src="./img/audio.png" alt="micro-button">
+                </div>
+                <div class="button-container">
+                    <img src="./img/telegram.png" alt="micro-button">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

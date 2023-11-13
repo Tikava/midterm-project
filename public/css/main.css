@@ -1,0 +1,320 @@
+body, html {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-bar .profile {
+    background-color: darkslateblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar img {
+    width: 20px;
+}
+
+.user-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.app-actions {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.app-actions input {
+    border-radius: 20px;
+    height: 30px;
+    border-color: gainsboro;
+}
+
+.app-actions a {
+    background-color: orangered;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.chat-list span {
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.pinned, .all-remaining {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversation {
+    display: flex;
+    border-bottom: 2px solid gainsboro;
+    width: 85%;
+    padding: 15px 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.selected-conversation {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.last-conversation {
+    border-bottom: none;
+}
+
+.user-img img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-info .username {
+    font-weight: bold;
+}
+
+.user-info .last-message {
+    color: gray;
+    font-size: 14px;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 10% 25% 65%;
+    gap: 10px;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    padding: 7px 20px;
+    justify-content: space-between;
+}
+
+.user-details {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.user-meta {
+    font-size: 12px;
+    color: gray;
+}
+
+.conversation-related {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.conversation-buttons {
+    display: flex;
+    gap: 5px;
+    border-right: 2px solid gainsboro;
+    padding-right: 10px;
+}
+
+.user button {
+    outline: inherit;
+    border-radius: 35px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-color: gainsboro;
+}
+
+#call-bttn {
+    background-color: black;
+    color: white;
+    border-style:none;
+}
+
+.conversation-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.conversation-actions img {
+    width: 20px;
+    height: 20px;
+}
+
+.chat-actions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.chatting-tools {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.chatting-tools img {
+    width: 15px;
+    height: 15px;
+}
+
+#user-input {
+    border-radius: 10px;
+    height: 30px;
+    width: 90%;
+    border-style: none;
+}
+
+.button-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.button-container:last-of-type {
+    background-color: orangered;
+}
+
+.button-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.view-chat {
+    border-radius: 4px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.my_message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.others-message-container {
+    display: flex;
+    gap: 5px;
+}
+
+.others-message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.others-message-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.date {
+    position: fixed;
+    top: 100px;
+    right: 500px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.my-text {
+    background-color: orangered;
+    color: white;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+.other-text {
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+.status {
+    display: flex;
+    gap: 5px;
+}
+
+.status .time {
+    font-size: 13px;
+}
+
+.status img {
+    width: 15px;
+    height: 15px;
+}
+
