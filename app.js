@@ -12,7 +12,7 @@ app.use(session({
     secret: 'secret-key',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Use secure: true if using HTTPS
+    cookie: { secure: false } // true if using HTTPS
 }));
 
 app.use(cors());
