@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDUTalks - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard-styles.css">
+</head>
+
+<body>
+    <h1>SDUTalks Dashboard</h1>
+
+    <!-- Profile Section -->
+    <section id="profileSection">
+        <h2>Profile Information</h2>
+        <div class="profile-info">
+            <img src="path_to_profile_image.jpg" alt="Profile Picture" id="profilePicture" />
+            <div class="profile-details">
+                <h3 id="profileName">John Doe</h3>
+                <p id="profileEmail">johndoe@example.com</p>
+                <!-- Add more profile details here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Form for Creating a New Conversation -->
+    <section id="createConversationSection">
+        <h2>Create a New Conversation</h2>
+        <form id="createConversationForm">
+            <div>
+                <label for="title">Conversation Title:</label>
+                <input type="text" id="title" placeholder="Enter a title for the conversation" required>
+            </div>
+            <div>
+                <label for="participants">Participants:</label>
+                <input type="text" id="participants" placeholder="Enter participant IDs (comma-separated)" required>
+            </div>
+            <button type="submit">Create Conversation</button>
+        </form>
+    </section>
+
+    <!-- List of Conversations -->
+    <section id="conversationsSection">
+        <h2>Your Conversations</h2>
+        <div id="conversationsContainer">
+            <!-- Conversations will be loaded here dynamically -->
+        </div>
+    </section>
+    <button id="logoutButton">Logout</button>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

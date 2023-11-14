@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 300px; /* Set a max-width for the login container */
+    margin: auto; /* Center the container on the page */
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container {
+    max-width: 300px; /* Set a max-width for the login container */
+    margin: auto; /* Center the container on the page */
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+.login-button, .register-button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: #6699CC;
+}
+
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    display: inline-block;
+    color: #003366;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Add to your styles.css */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add styles for your form inputs, buttons, and links */
+

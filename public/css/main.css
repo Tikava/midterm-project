@@ -64,6 +64,8 @@ body, html {
 }
 
 .chat-list {
+    max-height: 600px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -243,6 +245,8 @@ body, html {
 }
 
 .view-chat {
+    height: 450px;
+    overflow-y: auto;
     border-radius: 4px;
     background-color: white;
     border-radius: 20px;

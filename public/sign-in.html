@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDUTalks - Sign In</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="img/logo.jpg" alt="SDU Logo" class="logo">
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Sign In</button>
+            <div class="links">
+                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                <a href="sign-up.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Password Reset Modal (hidden by default) -->
+    <div id="passwordResetModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reset Password</h2>
+            <p>Enter your email address to receive a password reset link.</p>
+            <form id="passwordResetForm">
+                <div class="form-group">
+                    <label for="resetEmail">Email:</label>
+                    <input type="email" id="resetEmail" required>
+                </div>
+                <button type="submit" class="reset-password-button">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/sign-in.js"></script>
+</body>
+
+</html>
